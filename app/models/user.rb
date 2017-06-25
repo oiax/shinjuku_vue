@@ -8,4 +8,17 @@ class User < ApplicationRecord
       self.other_language = ""
     end
   end
+
+  def language_for_display
+    case language
+    when "ruby"
+      "Ruby"
+    when "php"
+      "PHP"
+    when "other"
+      other_language
+    else
+      raise
+    end
+  end
 end
