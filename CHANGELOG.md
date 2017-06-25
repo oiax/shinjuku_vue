@@ -20,6 +20,14 @@ shinjuku-vue CHANGELOG
 
 ## ERBテンプレートの書き換え
 
-* `app/views/users/new.html.erb` の編集
-* `app/views/users/edit.html.erb` の編集
-* `app/views/users/_fields.html.erb` の編集
+* `app/views/users/new.html.erb` を編集
+* `app/views/users/edit.html.erb` を編集
+* `app/views/users/_fields.html.erb` を編集
+
+## `vue-turbolinks` の導入
+
+* `bin/yarn add vue-turbolinks`
+* `app/javascript/packs/users/form.js` を編集
+* `app/views/users/new.html.erb` を編集
+* `app/views/users/edit.html.erb` を編集
+* `app/views/layouts/application.html.erb` を編集
