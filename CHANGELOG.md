@@ -31,3 +31,7 @@ shinjuku-vue CHANGELOG
 * `app/views/users/new.html.erb` を編集
 * `app/views/users/edit.html.erb` を編集
 * `app/views/layouts/application.html.erb` を編集
+
+## バリデーションエラーのときにフォームの各フィールドの値を維持する
+
+* `users/form.js` を `document.querySelector` でデータ初期化するように書き換え
