@@ -4,20 +4,20 @@ import TurbolinksAdapter from "vue-turbolinks";
 Vue.config.productionTip = false
 
 document.addEventListener("turbolinks:load", () => {
-  const elements = document.querySelector(".new_user, .edit_user")
+  const query = document.querySelector.bind(document)
+  const elements = query(".new_user, .edit_user")
 
   if (elements) {
-    const name = document.querySelector("[v-model='user.name']").value
-    const language = document.querySelector("[v-model='user.language']:checked")
-    const other_language =
-      document.querySelector("[v-model='user.other_language']").value
+    const name = query("[v-model='user.name']").value
+    const language = (query("[v-model='user.language']:checked") || {}).value
+    const other_language = query("[v-model='user.other_language']").value
 
     const app = new Vue({
       el: elements,
       data: {
         user: {
           name: name,
-          language: language ? language.value : undefined,
+          language: language,
           other_language: other_language
         }
       },
