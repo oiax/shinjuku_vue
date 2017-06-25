@@ -35,3 +35,10 @@ shinjuku-vue CHANGELOG
 ## バリデーションエラーのときにフォームの各フィールドの値を維持する
 
 * `users/form.js` を `document.querySelector` でデータ初期化するように書き換え
+* `const query = document.querySelector.bind(document)` を用いたリファクタリング
+
+## Vue.jsの小技
+
+* `v-cloak` ディレクティブを使う。
+
+ここでタグ `ver1` をセット。

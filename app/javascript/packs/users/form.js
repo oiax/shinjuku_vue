@@ -5,15 +5,15 @@ Vue.config.productionTip = false
 
 document.addEventListener("turbolinks:load", () => {
   const query = document.querySelector.bind(document)
-  const elements = query(".new_user, .edit_user")
+  const element = document.getElementById("user-form")
 
-  if (elements) {
+  if (element) {
     const name = query("[v-model='user.name']").value
     const language = (query("[v-model='user.language']:checked") || {}).value
     const other_language = query("[v-model='user.other_language']").value
 
     const app = new Vue({
-      el: elements,
+      el: element,
       data: {
         user: {
           name,
