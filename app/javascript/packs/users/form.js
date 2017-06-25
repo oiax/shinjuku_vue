@@ -16,9 +16,9 @@ document.addEventListener("turbolinks:load", () => {
       el: elements,
       data: {
         user: {
-          name: name,
-          language: language,
-          other_language: other_language
+          name,
+          language,
+          other_language
         }
       },
       mixins: [ TurbolinksAdapter ]
