@@ -42,3 +42,5 @@ shinjuku-vue CHANGELOG
 * `v-cloak` ディレクティブを使う。
 
 ここでタグ `ver1` をセット。
+
+* `yarn add vue-data-scooper`
