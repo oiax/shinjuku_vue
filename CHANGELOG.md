@@ -49,3 +49,7 @@ shinjuku-vue CHANGELOG
 ここでタグ `ver2` をセット。
 
 * `Gemfile` に `vue-rails-form-builder` を追加して `bundle install`
+* `form_for` を `vue_form_for` で置換
+* `v-model` 属性を除去
+
+ここでタグ `ver3` をセット。
