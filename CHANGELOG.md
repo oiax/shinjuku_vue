@@ -45,3 +45,7 @@ shinjuku-vue CHANGELOG
 
 * `yarn add vue-data-scooper`
 * `users/form.js` で `Vue.use(VueDataScooper)`
+
+ここでタグ `ver2` をセット。
+
+* `Gemfile` に `vue-rails-form-builder` を追加して `bundle install`

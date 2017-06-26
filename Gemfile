@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'webpacker'
+gem 'vue-rails-form-builder'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
