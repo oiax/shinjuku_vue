@@ -44,3 +44,4 @@ shinjuku-vue CHANGELOG
 ここでタグ `ver1` をセット。
 
 * `yarn add vue-data-scooper`
+* `users/form.js` で `Vue.use(VueDataScooper)`
